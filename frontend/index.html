@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dheeraj: Potato Disease Classification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="title">Potato Disease Classification</div>
+    <div class="menu">
+      <!-- <a href="#">Home</a> -->
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <div class="imageCard">
+      <div class="content">
+        <input type="file" id="fileInput" accept="image/*" style="display:none">
+        <label for="fileInput" class="uploadButton">
+          <div class="uploadIcon">📤</div>
+          <div class="uploadText">Drag and drop or click to upload an image</div>
+          <div class="browseButton">Browse</div>
+        </label>
+        <img id="preview" class="media" src="" alt="Preview">
+      </div>
+         
+      </div>
+    </div>
+    <div class="results">
+        <div id="label"></div>
+        <div id="confidence"></div>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
