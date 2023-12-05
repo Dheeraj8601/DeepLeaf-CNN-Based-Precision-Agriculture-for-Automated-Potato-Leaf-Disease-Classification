@@ -6,13 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dheeraj: Potato Disease Classification</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .mainContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imageCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+
+    .content {
+      width: 80%;
+      /* Adjust the width as needed */
+      max-width: 400px;
+      /* Adjust the max-width as needed */
+      margin: 0 auto;
+      /* Center the content */
+    }
+
+    .uploadButton {
+      border: 2px solid #d82626;
+      border-radius: 5px;
+    }
+
+    .uploadText {
+      margin-top: 8px;
+    }
+
+
+    .results {
+      text-align: center;
+    }
+
+    #label {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d82626;
+      /*#333;*/
+      margin-bottom: 10px;
+    }
+
+    #confidence {
+      font-size: 18px;
+      color: #5a0c0c;
+    }
+  </style>
 </head>
 
 <body>
   <div class="navbar">
     <div class="title">Potato Disease Classification</div>
     <div class="menu">
-      <!-- <a href="#">Home</a> -->
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -20,23 +70,24 @@
   <div class="mainContainer">
     <div class="imageCard">
       <div class="content">
-        <input type="file" id="fileInput" accept="image/*" style="display:none">
-        <label for="fileInput" class="uploadButton">
-          <div class="uploadIcon">📤</div>
-          <div class="uploadText">Drag and drop or click to upload an image</div>
-          <div class="browseButton">Browse</div>
-        </label>
+        <input type="file" id="fileInput" accept="image/*" style="display:none;align-items: center;">
+
+        <div class="upload">
+          <label for="fileInput" class="uploadButton">
+            <div class="uploadIcon">📤</div>
+            <div class="uploadText">Drag and drop or click to upload an image</div>
+            <div class="browseButton">Browse</div>
+          </label>
+        </div>
         <img id="preview" class="media" src="" alt="Preview">
-      </div>
-         
       </div>
     </div>
     <div class="results">
-        <div id="label"></div>
-        <div id="confidence"></div>
-      </div>
+      <div id="label"></div>
+      <div id="confidence"></div>
+    </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 
