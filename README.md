@@ -11,7 +11,6 @@
 
 ## 2. PlantVillage Dataset
 - PlantVillage dataset used for training the CNN model.
-- Additional storage and directory structure details to be added.
 
 Note: Detailed code and data storage specifics are available in the Jupyter Notebook (training.ipynb).
 
@@ -32,24 +31,7 @@ Note: Detailed code and data storage specifics are available in the Jupyter Note
 - JavaScript file handling user interactions.
 - Enables image upload, displays a preview, and triggers API calls for disease classification.
 
-Note: Adjust the API URL in `script.js` (`const apiUrl`) to match your backend server.
-HTML, CSS, and JavaScript work together to create an intuitive and visually pleasing classification interface.
-
 ## 4. Additional HTML Pages: Disease Information and Contact
-
-### disease_info.html:
-- Provides detailed information on two common potato diseases: Late Blight and Early Blight.
-- Describes symptoms and suggests solutions for each disease.
-- Includes a section on general disease management practices.
-
-### contact.html:
-- Displays a "Contact Us" page with a section introducing the developers.
-- Lists the names of developers along with their respective links.
-- Developers can be contacted through the provided links.
-
-Note: 
-- Ensure to replace placeholder links (e.g., developer links) with actual links in the `contact.html` file.
-- Consistent navigation links are present across all pages for a seamless user experience.
 
 ## 5. FastAPI Backend and Android App Integration:
 
@@ -69,12 +51,6 @@ Note:
 - Utilizes a TensorFlow Lite (tflite) model produced in the training.ipynb notebook.
 - Incorporates functionality to capture or select an image.
 - Sends the image to the FastAPI backend "/predict" endpoint for classification.
-- Displays the predicted class and confidence obtained from the backend.
+- Displays the predicted class obtained from the backend.
 - Provides a user-friendly interface for interacting with the potato disease classification system.
-
-Note:
-- Ensure the TensorFlow Lite model used in the Android app aligns with the model saved in the `training.ipynb` notebook.
-- Android app should handle image capture or selection, communicate with the FastAPI backend, and display classification results.
-- Ensure network permissions are configured in the Android app to communicate with the FastAPI backend.
-- Test the integration thoroughly to ensure seamless communication between the FastAPI backend and the Android app.
 
